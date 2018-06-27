@@ -6,12 +6,14 @@ public class Address {
 
     private final int id;
     private final String country;
+    private final String city;
     private final String street;
     private final String post_code;
 
-    public Address(int id, String country, String street, String post_code) {
+    public Address(int id, String country, String city, String street, String post_code) {
         this.id = id;
         this.country = country;
+        this.city = city;
         this.street = street;
         this.post_code = post_code;
     }
@@ -23,6 +25,8 @@ public class Address {
     public String getCountry() {
         return country;
     }
+
+    public String getCity() {return city;}
 
     public String getStreet() {
         return street;
@@ -46,7 +50,7 @@ public class Address {
     @Override
     public int hashCode() {
 
-        return Objects.hash(id, country, street, post_code);
+        return Objects.hash(id, country, city, street, post_code);
     }
 
     @Override
@@ -54,6 +58,7 @@ public class Address {
         return "Address{" +
                 "id=" + id +
                 ", country='" + country + '\'' +
+                ", city='" + city + '\'' +
                 ", street='" + street + '\'' +
                 ", post_code='" + post_code + '\'' +
                 '}';
