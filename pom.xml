@@ -27,6 +27,13 @@
             <artifactId>postgresql</artifactId>
             <version>42.2.2</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.glassfish.main.common/glassfish-api -->
+        <dependency>
+            <groupId>org.glassfish.main.common</groupId>
+            <artifactId>glassfish-api</artifactId>
+            <version>5.0</version>
+        </dependency>
+
 
     </dependencies>
 
